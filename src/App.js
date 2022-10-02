@@ -12,10 +12,12 @@ export const buttonThemes = {
   },
 };
 
+const AppContext = React.createContext(null);
+
 function App() {
   return (
     <Header />
   );
 }
 
-export default App;
+export default {AppContext, buttonThemes, App};
